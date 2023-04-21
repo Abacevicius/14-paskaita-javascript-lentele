@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="style.css">
+ <title>14 paskaita</title>
+</head>
+
+<body>
+ <h1>Append table</h1>
+<input type="text" name ="name" id="name" placeholder="vardas" autocomplete="off">
+ <input type="text" name ="surname"  id="surname" placeholder="pavardė">
+ <input type="text" name = "age" id="age" placeholder="amžius">
+<div class="btn">
+<input type="button" value="Pridėti" onclick="addRow()" id="add">
+ <input type="button" value="Ištrinti pirmą" onclick="removeFirst()" id="removefirst">
+
+  <input type="button" value="Ištrinti paskutinę" onclick="removeLast()" id="removelast">
+
+</div>
+
+ <table id="table">
+  <thead id="table-head">
+<tr>
+ <th>Vardas</th>
+ <th>Pavardė</th>
+ <th>Amžius</th>
+</tr>
+  </thead>
+  <tbody id="table-body"></tbody>
+  <!-- <tr>
+   <th>Vardas</th>
+   <th>Pavardė</th>
+   <th>Amžius</th>
+  </tr> -->
+  <tr>
+   <td>Jonas</td>
+   <td>Rimkus</td>
+   <td>54</td>
+  </tr>
+  <tr>
+   <td>Vestina</td>
+   <td>Petronytė</td>
+   <td>31</td>
+  </tr>
+  <tr>
+   <td id="name">Marius</td>
+   <td id="surname">Dulinskas</td>
+   <td id="age">23</td>
+  </tr>
+
+ </table>
+ <script src="script.js"></script>
+</body>
+
+</html>
